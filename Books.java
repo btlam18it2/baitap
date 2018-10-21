@@ -1,77 +1,96 @@
-package book;
+package Books;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class book {
-	String Tensach;
-	String Masach;
-	String Namxb;
-	String Nhaxuatban;
-	String Theloai;
-	String Tacgia;
-	float Soluong;
-	float Gia;
-	
-	public String getTensach() {
-		return Tensach;
-	}
-	public void setTensach(String tensach) {
-		Tensach = tensach;
-	}
+public class Books {
+	String masach;
+	String tensach;
+	String namxb;
+	String tacgia;
+	String theloai;
+	float soluong;
+	float gia;
+
+
 	public String getMasach() {
-		return Masach;
+		return masach;
 	}
+
+
 	public void setMasach(String masach) {
-		Masach = masach;
+		this.masach = masach;
 	}
+
+
+	public String getTensach() {
+		return tensach;
+	}
+
+
+	public void setTensach(String tensach) {
+		this.tensach = tensach;
+	}
+
+
 	public String getNamxb() {
-		return Namxb;
+		return namxb;
 	}
+
+
 	public void setNamxb(String namxb) {
-		Namxb = namxb;
+		this.namxb = namxb;
 	}
-	public String getNhaxuatban() {
-		return Nhaxuatban;
-	}
-	public void setNhaxuatban(String nhaxuatban) {
-		Nhaxuatban = nhaxuatban;
-	}
-	public String getTheloai() {
-		return Theloai;
-	}
-	public void setTheloai(String theloai) {
-		Theloai = theloai;
-	}
+
+
 	public String getTacgia() {
-		return Tacgia;
+		return tacgia;
 	}
+
+
 	public void setTacgia(String tacgia) {
-		Tacgia = tacgia;
+		this.tacgia = tacgia;
 	}
+
+
+	public String getTheloai() {
+		return theloai;
+	}
+
+
+	public void setTheloai(String theloai) {
+		this.theloai = theloai;
+	}
+
+
 	public float getSoluong() {
-		return Soluong;
+		return soluong;
 	}
+
+
 	public void setSoluong(float soluong) {
-		Soluong = soluong;
+		this.soluong = soluong;
 	}
+
+
 	public float getGia() {
-		return Gia;
+		return gia;
 	}
+
+
 	public void setGia(float gia) {
-		Gia = gia;
+		this.gia = gia;
 	}
-	
-	public book (String Tensach, String Masach, String Nhaxuatban
-			, String Theloai, String Tacgia, String namxb, float Soluong, float Gia )
-	{
-		this.Tensach = Tensach;
-		this.Masach = Masach;
-		this.Namxb = namxb;
-		this.Nhaxuatban = Nhaxuatban;
-		this.Theloai = Theloai;
-		this.Tacgia = Tacgia;
-		this.Soluong = Soluong;
-		this.Gia = Gia ;
+
+
+	public Books(String tensach,String masach,String namxb, String tacgia,String theloai, float soluong, float gia) {
+		this.tensach = tensach;
+		this.masach = masach;
+		this.namxb = namxb;
+		this.tacgia = tacgia;
+		this.theloai = theloai;
+		this.soluong = soluong;
+		this.gia = gia;
 	}
-	}
+}
+
